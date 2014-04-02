@@ -22,22 +22,27 @@ Finally, if you've never used Chef before - we highly recommend you buy &amp; wa
 Don't forget to start up Xcode once it's installed so that you can agree to the terms&mdash;many commands won't work until the terms have been agreed to.
 
 ### 2. Install Command Line Tools
+
+    go to http://developer.apple.com/downloads/index.action?name=for%20Xcode%20-  
+    Download and install Command Line Tools (OSX Mavericks) for XCode - LATEST
+
+### 4. Install a ruby patch for allowing gem compilation on clang
+
+    curl https://gist.githubusercontent.com/Paulche/9713531/raw/1e57fbb440d36ca5607d1739cc6151f373b234b6/gistfile1.txt | sudo patch /System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/2.0.0/universal-darwin13/rbconfig.rb
   
-    xcode-select --install
-  
-### 3. Clone this project
+### 4. Clone this project
 
     git clone https://github.com/pivotal-sprout/sprout-wrap.git
     cd sprout-wrap
 
-### 4. Install soloist & and other required gems
+### 5. Install soloist & and other required gems
 
 If you're running under rvm or rbenv, you shouldn't preface the following commands with `sudo`.
 
     sudo gem install bundler
     sudo bundle
 
-### 5. Run soloist
+### 6. Run soloist
 
 [You may want to modify your Energy Saver preferences (**System Preferences &rarr; Energy Saver &rarr; Computer Sleep &rarr; 3hrs**) because soloist usually takes 2-3 hours to complete.]
 

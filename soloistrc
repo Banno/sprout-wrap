@@ -1,4 +1,4 @@
-recipes:
+ recipes:
 
 # base (required by sprout)
 - sprout-osx-base::bash_it
