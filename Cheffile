@@ -18,12 +18,10 @@ cookbook 'sprout-osx-base',
   :path => 'sprout-osx-base'
 
 cookbook 'pivotal_workstation',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'pivotal_workstation'
+  :path => '../sprout/pivotal_workstation'
 
 cookbook 'sprout-osx-apps',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-apps'
+  :path => '../sprout/sprout-osx-apps'
 
 cookbook 'sprout-osx-settings',
   :github => 'pivotal-sprout/sprout',
@@ -42,8 +40,10 @@ cookbook 'sprout-osx-rubymine',
   :path => 'sprout-osx-rubymine'
 
 cookbook 'sprout-homebrew',
-  :github => 'pivotal-sprout/sprout-homebrew'
+  :path => '../sprout-homebrew'
 
 cookbook 'sprout-terminal',
   :github => 'pivotal-sprout/sprout-terminal'
 
+cookbook 'sprout-homebrew-emacs',
+  :path => '../sprout-homebrew-emacs'
