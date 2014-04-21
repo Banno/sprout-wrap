@@ -37,9 +37,9 @@ cookbook 'osx',
   :github => 'pivotal-sprout/sprout',
   :path => 'osx'
 
-cookbook 'sprout-osx-rubymine',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-rubymine'
+# cookbook 'sprout-osx-rubymine',
+#   :github => 'pivotal-sprout/sprout',
+#   :path => 'sprout-osx-rubymine'
 
 cookbook 'sprout-homebrew',
   :github => 'pivotal-sprout/sprout-homebrew'
@@ -70,3 +70,9 @@ cookbook 'banno-pivotal-workstation-unix-essentials',
 
 cookbook 'banno-sprout-osx-apps-xquartz',
   :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-xquartz.git'
+
+cookbook 'sprout-vmware-fusion',
+  :git => 'git@git.banno.com:cookbooks/sprout-vmware-fusion.git'
+
+cookbook 'sprout-postgresql',
+  :git => 'git@github.com:pivotal-sprout/sprout-postgresql.git'

@@ -9,6 +9,7 @@ recipes:
 - banno-pivotal-workstation-tmux
 - banno-sprout-osx-apps-homebrew-cask
 - banno-sprout-osx-apps-xquartz
+- sprout-vmware-fusion
 
 
 # settings
@@ -55,8 +56,8 @@ recipes:
 - sprout-osx-apps::macvim
 - sprout-osx-apps::ctags_exuberant
 
-- sprout-osx-apps::rubymine
-- sprout-osx-rubymine::preferences
+# - sprout-osx-apps::rubymine
+# - sprout-osx-rubymine::preferences
 
 - banno-sprout-homebrew::default
 
