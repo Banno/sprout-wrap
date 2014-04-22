@@ -9,8 +9,12 @@ recipes:
 - banno-pivotal-workstation-tmux
 - banno-sprout-osx-apps-homebrew-cask
 - banno-sprout-osx-apps-xquartz
-- sprout-vmware-fusion
+- sprout-vagrant::default
+- sprout-vmware-fusion::application
+- sprout-vmware-fusion::vagrant_plugin
 
+
+# below not needed for the development setup (using vmware and vagrant and test-kitchen)
 
 # settings
 - pivotal_workstation::sshd_on
@@ -18,7 +22,7 @@ recipes:
 - sprout-osx-settings::defaults_fast_key_repeat_rate
 - pivotal_workstation::locate_on
 - sprout-osx-settings::global_environment_variables
-- sprout-osx-settings::set_menubar_clock_format
+#- sprout-osx-settings::set_menubar_clock_format
 - sprout-terminal
 
 # development (general)
@@ -93,5 +97,4 @@ node_attributes:
         - gitx-rowanj
         - google-chrome
         - skype
-        - vagrant
         - virtualbox
