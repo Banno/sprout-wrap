@@ -6,19 +6,21 @@ cookbook 'meta',
   :path => 'site-cookbooks/meta'
 
 cookbook 'sprout-osx-rbenv',
-  :github => 'pivotal-sprout/sprout',
+:github => 'pivotal-sprout/sprout',
+:ref => 'mavericks',
   :path => 'sprout-osx-rbenv'
 
 cookbook 'sprout-osx-git',
   :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-git'
+:ref => 'mavericks',  :path => 'sprout-osx-git'
 
 cookbook 'sprout-osx-base',
   :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-base'
+:ref => 'mavericks',  :path => 'sprout-osx-base'
 
 cookbook 'pivotal_workstation',
-  :github => 'pivotal-sprout/sprout',
+:github => 'pivotal-sprout/sprout',
+:ref => 'mavericks',
   :path => 'pivotal_workstation'
 
 cookbook 'sprout-osx-apps',
@@ -27,7 +29,7 @@ cookbook 'sprout-osx-apps',
 
 cookbook 'sprout-osx-settings',
   :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-settings'
+:ref => 'mavericks',  :path => 'sprout-osx-settings'
 
 cookbook 'sprout-pivotal',
   :github => 'pivotal-sprout/sprout',
@@ -74,5 +76,3 @@ cookbook 'banno-sprout-osx-apps-xquartz',
 cookbook 'sprout-vmware-fusion',
   :git => 'git@git.banno.com:cookbooks/sprout-vmware-fusion.git'
 
-cookbook 'sprout-postgresql',
-  :git => 'git@github.com:pivotal-sprout/sprout-postgresql.git'
