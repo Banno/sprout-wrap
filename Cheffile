@@ -2,77 +2,52 @@
 
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'meta',
-  :path => 'site-cookbooks/meta'
+cookbook 'meta', :path => 'site-cookbooks/meta'
 
-cookbook 'sprout-osx-rbenv',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-rbenv'
+cookbook 'sprout-base', :github => 'pivotal-sprout/sprout-base'
 
-cookbook 'sprout-osx-git',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-git'
+cookbook 'sprout-osx-rbenv', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :ref => 'mavericks', :path => 'sprout-osx-rbenv'
 
-cookbook 'sprout-osx-base',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-base'
+cookbook 'sprout-osx-git', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :ref => 'mavericks', :path => 'sprout-osx-git'
 
-cookbook 'pivotal_workstation',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'pivotal_workstation'
+cookbook 'sprout-osx-base', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :ref => 'mavericks', :path => 'sprout-osx-base'
 
-cookbook 'sprout-osx-apps',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-apps'
+cookbook 'pivotal_workstation', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'pivotal_workstation'
 
-cookbook 'sprout-osx-settings',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-osx-settings'
+cookbook 'sprout-osx-apps', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'sprout-osx-apps'
 
-cookbook 'sprout-pivotal',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'sprout-pivotal'
+cookbook 'sprout-osx-settings', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'sprout-osx-settings'
 
-cookbook 'osx',
-  :github => 'pivotal-sprout/sprout',
-  :path => 'osx'
+cookbook 'sprout-pivotal', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'sprout-pivotal'
 
-# cookbook 'sprout-osx-rubymine',
-#   :github => 'pivotal-sprout/sprout',
-#   :path => 'sprout-osx-rubymine'
+cookbook 'osx', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'osx'
 
-cookbook 'sprout-homebrew',
-  :github => 'pivotal-sprout/sprout-homebrew'
+cookbook 'sprout-osx-rubymine', :github => 'pivotal-sprout/sprout', :ref => 'mavericks', :path => 'sprout-osx-rubymine'
 
-cookbook 'sprout-terminal',
-  :github => 'pivotal-sprout/sprout-terminal'
+cookbook 'sprout-homebrew', :github => 'pivotal-sprout/sprout-homebrew'
 
-cookbook 'banno-sprout-osx-base-homebrew',
-  :path   => '../banno-sprout-osx-apps-homebrew'
+cookbook 'sprout-terminal', :github => 'pivotal-sprout/sprout-terminal'
 
-cookbook 'banno-sprout-homebrew',
-  :git => 'git@git.banno.com:cookbooks/banno-sprout-homebrew.git'
+cookbook 'banno-sprout-osx-base-homebrew', :path   => '../banno-sprout-osx-apps-homebrew'
 
-cookbook 'banno-sprout-osx-apps-ack',
-  :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-ack.git'
+cookbook 'banno-sprout-homebrew', :git => 'git@git.banno.com:cookbooks/banno-sprout-homebrew.git'
 
-cookbook 'banno-pivotal-workstation-git',
-  :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-git.git'
+cookbook 'banno-sprout-osx-apps-ack', :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-ack.git'
 
-cookbook 'banno-pivotal-workstation-tmux',
-  :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-tmux.git'
+cookbook 'banno-pivotal-workstation-git', :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-git.git'
 
-cookbook 'banno-sprout-osx-apps-homebrew-cask',
-  :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-homebrew-cask.git'
+cookbook 'banno-pivotal-workstation-tmux', :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-tmux.git'
 
-cookbook 'banno-pivotal-workstation-unix-essentials',
-  :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-unix-essentials.git'
+cookbook 'banno-sprout-osx-apps-homebrew-cask', :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-homebrew-cask.git'
 
-cookbook 'banno-sprout-osx-apps-xquartz',
-  :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-xquartz.git'
+cookbook 'banno-pivotal-workstation-unix-essentials', :git => 'git@git.banno.com:cookbooks/banno-pivotal-workstation-unix-essentials.git'
 
-cookbook 'sprout-vmware-fusion',
-  :git => 'git@git.banno.com:cookbooks/sprout-vmware-fusion.git'
+cookbook 'banno-sprout-osx-apps-xquartz', :git => 'git@git.banno.com:cookbooks/banno-sprout-osx-apps-xquartz.git'
 
-cookbook 'sprout-postgresql',
-  :git => 'git@github.com:pivotal-sprout/sprout-postgresql.git'
+cookbook 'sprout-vmware-fusion', :git => 'git@git.banno.com:cookbooks/sprout-vmware-fusion.git'
+
+cookbook 'sprout-postgresql', :git => 'git@github.com:pivotal-sprout/sprout-postgresql.git'
+
+cookbook 'sprout-vagrant', :git => 'git@git.banno.com:cookbooks/sprout-vagrant.git'
+
+cookbook 'sprout-vmware-fusion', :git => 'git@git.banno.com:cookbooks/sprout-vmware-fusion.git'
